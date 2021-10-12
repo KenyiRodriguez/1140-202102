@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -153,25 +158,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola, Soy el Home " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5X-7Z-Atq">
-                                <rect key="frame" x="78" y="172" width="144" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola, Soy el Home " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5X-7Z-Atq">
+                                <rect key="frame" x="30" y="172" width="354" height="21"/>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ys-Jf-N6u">
-                                <rect key="frame" x="63" y="258" width="222" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ys-Jf-N6u">
+                                <rect key="frame" x="63" y="258" width="331" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="FOr-ef-tGT"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cerrar sesión"/>
                                 <connections>
                                     <action selector="clickBtnCloseSession:" destination="IrY-Wt-8TH" eventType="touchUpInside" id="RAG-fl-6fA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANc-Bv-q68">
+                                <rect key="frame" x="30" y="353" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tS7-Mo-ysX"/>
+                                    <constraint firstAttribute="width" constant="120" id="yCd-dd-Wk9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola, Soy el Home Hola, Soy el Home Hola, Soy el Home Hola, Soy el Home Hola, Soy el Home Hola, Soy el Home Hola, Soy el Home " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nL-7e-nXD">
+                                <rect key="frame" x="170" y="353" width="214" height="147"/>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mbV-Rf-8sV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9nL-7e-nXD" firstAttribute="leading" secondItem="ANc-Bv-q68" secondAttribute="trailing" constant="20" id="D4J-6m-8jf"/>
+                            <constraint firstItem="p5X-7Z-Atq" firstAttribute="leading" secondItem="mbV-Rf-8sV" secondAttribute="leading" constant="30" id="KH4-UG-ONQ"/>
+                            <constraint firstItem="9nL-7e-nXD" firstAttribute="top" secondItem="ANc-Bv-q68" secondAttribute="top" id="Nv0-BD-WsN"/>
+                            <constraint firstItem="0ys-Jf-N6u" firstAttribute="leading" secondItem="mbV-Rf-8sV" secondAttribute="leading" constant="63" id="V4L-ke-oH6"/>
+                            <constraint firstItem="mbV-Rf-8sV" firstAttribute="trailing" secondItem="0ys-Jf-N6u" secondAttribute="trailing" constant="20" id="Y7f-WA-15D"/>
+                            <constraint firstItem="mbV-Rf-8sV" firstAttribute="trailing" secondItem="9nL-7e-nXD" secondAttribute="trailing" constant="30" id="ebR-UL-q7g"/>
+                            <constraint firstItem="ANc-Bv-q68" firstAttribute="top" secondItem="0ys-Jf-N6u" secondAttribute="bottom" constant="64" id="iJZ-5G-sA9"/>
+                            <constraint firstItem="p5X-7Z-Atq" firstAttribute="top" secondItem="mbV-Rf-8sV" secondAttribute="top" constant="128" id="ov7-hI-KBj"/>
+                            <constraint firstItem="mbV-Rf-8sV" firstAttribute="trailing" secondItem="p5X-7Z-Atq" secondAttribute="trailing" constant="30" id="w51-Qh-ew6"/>
+                            <constraint firstItem="0ys-Jf-N6u" firstAttribute="top" secondItem="p5X-7Z-Atq" secondAttribute="bottom" constant="65" id="yJ5-Wx-YMH"/>
+                            <constraint firstItem="ANc-Bv-q68" firstAttribute="leading" secondItem="mbV-Rf-8sV" secondAttribute="leading" constant="30" id="zIA-Ll-Lw4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rPX-N1-re7"/>
                 </viewController>
