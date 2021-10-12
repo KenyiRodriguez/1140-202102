@@ -17,6 +17,8 @@ import UIKit
         - Como "vacio"  : La variable genera su propia autodescripción
  */
 
+                     
+
 
 //Función con alias "vacio"
 func sumar(numero1: Int, numero2: Int) -> Int {
