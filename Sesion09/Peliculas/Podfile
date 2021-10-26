@@ -1,0 +1,9 @@
+
+target 'Peliculas' do
+ 
+  use_frameworks!
+
+  pod 'Firebase'
+  pod 'FirebaseFirestore'
+
+end

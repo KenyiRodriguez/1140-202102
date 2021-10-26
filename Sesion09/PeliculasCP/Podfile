@@ -1,0 +1,12 @@
+
+target 'Peliculas' do
+
+  use_frameworks!
+
+  pod 'GoogleMaps'
+  pod 'Alamofire'
+  pod 'Firebase'
+  pod 'FirebaseFirestore'
+  pod 'FirebaseCore'
+
+end
