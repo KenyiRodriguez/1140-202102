@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About us-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="InformationViewController" id="Y6W-OH-hqX" customClass="InformationViewController" customModule="Peliculas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Feo-df-H3J">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBF-rb-vpJ">
+                                        <rect key="frame" x="166.5" y="10.5" width="81" height="23"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="HBF-rb-vpJ" firstAttribute="centerX" secondItem="Feo-df-H3J" secondAttribute="centerX" id="A5q-xo-zLJ"/>
+                                    <constraint firstItem="HBF-rb-vpJ" firstAttribute="centerY" secondItem="Feo-df-H3J" secondAttribute="centerY" id="anR-it-OCX"/>
+                                    <constraint firstAttribute="height" constant="44" id="dGZ-Lt-zzs"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvi-e8-HcG">
+                                <rect key="frame" x="114.5" y="113" width="185" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cAY-fV-L9B"/>
+                                    <constraint firstAttribute="width" constant="185" id="ppu-SI-acY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Cerrar sesión">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickBtnCloseSession:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sQb-bE-VHl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cvi-e8-HcG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3J6-9g-9it"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Feo-df-H3J" secondAttribute="trailing" id="8yF-1q-m8A"/>
+                            <constraint firstItem="Feo-df-H3J" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="jbm-6m-PcN"/>
+                            <constraint firstItem="Feo-df-H3J" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="kbL-ze-k6Z"/>
+                            <constraint firstItem="Cvi-e8-HcG" firstAttribute="top" secondItem="Feo-df-H3J" secondAttribute="bottom" constant="25" id="zCf-KL-JUp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About us" image="info.circle" catalog="system" selectedImage="info.circle.fill" id="ehe-OJ-hTR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
